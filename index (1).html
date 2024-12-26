@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Page Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#/home" onclick="navigate(event, '#/home')">Home</a>
+    <a href="#/about" onclick="navigate(event, '#/about')">About</a>
+    <a href="#/contact" onclick="navigate(event, '#/contact')">Contact</a>
+  </nav>
+
+  <!-- Pages -->
+  <div id="home" class="page active">
+    <h1>Home Page</h1>
+    <p>Welcome to the Home page!</p>
+  </div>
+  <div id="about" class="page">
+    <h1>About Page</h1>
+    <p>This is the About page.</p>
+  </div>
+  <div id="contact" class="page">
+    <h1>Contact Page</h1>
+    <p>Reach us at contact@example.com</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
